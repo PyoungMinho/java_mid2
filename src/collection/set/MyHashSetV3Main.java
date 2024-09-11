@@ -11,10 +11,12 @@ public class MyHashSetV3Main {
         set.add("C");
         System.out.println(set);
 
-        //검색
+
+        //검색하기
         String searchValue = "A";
         boolean result = set.contains(searchValue);
         System.out.println("set.contains(" + searchValue + ") = " + result);
+        System.out.println("확인용 콘솔");
 
     }
 }
