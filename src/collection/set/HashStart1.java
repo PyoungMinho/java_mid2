@@ -19,5 +19,5 @@ public class HashStart1 {
             }
         }
     }
-    // Refactoring 강의 듣기
+    // Refactoring 강의 듣기 실행중
 }
