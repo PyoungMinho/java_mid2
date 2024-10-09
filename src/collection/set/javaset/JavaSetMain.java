@@ -26,4 +26,9 @@ public class JavaSetMain {
     }
     System.out.println();
   }
+  /*
+  * HashSet : 입력한 순서를 보장하지 않는다.
+  * LinkedHashSet : 입력한 순서를 정확히 보장한다.
+  * TreeSet : 데이터 값을 기준으로 정렬한다.
+  * */
 }
