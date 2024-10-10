@@ -19,10 +19,13 @@ public class JavaSetMain {
     set.add("A");
     set.add("1");
     set.add("2");
+    set.add("26");
+
 
     Iterator<String> iterator = set.iterator();
     while (iterator.hasNext()) {
       System.out.print(iterator.next()+ " ");
+
     }
     System.out.println();
   }
