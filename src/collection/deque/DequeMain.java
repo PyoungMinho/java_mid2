@@ -6,7 +6,7 @@ import java.util.Deque;
 public class DequeMain {
 
   public static void main(String[] args) {
-    Deque<Integer> deque = new ArrayDeque<>();
+    Deque<Integer> deque = new ArrayDeque<>(); // LinkedList보다 무조건 빠르다 ArrayDeque를 사용하도록 하자.
 //    Deque<Integer> deque = new LinkedList<>();
 
     // 데이터 추가
