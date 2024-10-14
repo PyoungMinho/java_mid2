@@ -13,7 +13,7 @@ public class MyArrayMain {
       System.out.print (iterator.next());
     }
 
-    for (Integer i : myArray) { // myArray에서 iterator를 오버라이딩 했기때문에 사용이 가능하다.
+    for (Integer i : myArray) { // myArray에서 iterator를 오버라이딩 했기 때문에 사용이 가능하다.
       System.out.println("i value : " + i);
     }
   }
