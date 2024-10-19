@@ -6,6 +6,7 @@ import java.util.Deque;
 public class DequeQueueMain {
   public static void main(String[] args) {
     Deque<Integer> deque = new ArrayDeque<>();
+    //    Deque<Integer> deque2 = new LinkedList<>();
 
     // 데이터 추가
     deque.offer(1);

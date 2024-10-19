@@ -18,7 +18,6 @@ public class SortMain3 {
     Arrays.sort(arrays);
     System.out.println(Arrays.toString(arrays));
 
-
     System.out.println("id comparator");
     Arrays.sort(arrays, new IdComparator());
     System.out.println(Arrays.toString(arrays));
