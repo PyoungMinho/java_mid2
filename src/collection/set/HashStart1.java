@@ -18,5 +18,6 @@ public class HashStart1 {
                 System.out.println(i);
             }
         }
+        //Hash 메커니즘 이해완료
     }
 }
