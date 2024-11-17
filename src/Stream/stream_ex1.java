@@ -1,10 +1,18 @@
 package Stream;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public class stream_ex1 {
     public static void main(String[] args) {
         // 람다 Stream 을 공부하기 위한 공간
+
+        // 스트림 만들기
+            // 배열
+            String[] arr = new String[]{"a","b","c","d","e","f"};
+            Stream<String> stream = Arrays.stream(arr); 
+
+
         List<String> names = Arrays.asList("Alice","b","c","d","e");
 
         List<String> filterNames =  new ArrayList<>();
