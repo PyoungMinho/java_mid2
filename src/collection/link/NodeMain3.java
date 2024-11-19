@@ -54,4 +54,6 @@ public class NodeMain3 {
         Node lastNode = getLastNode(node);
         lastNode.next = new Node(param);
     }
+
+    // Node를 모아서 새로운 객체를 탄생시키자
 }

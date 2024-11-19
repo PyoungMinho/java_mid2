@@ -13,8 +13,8 @@ public class JavaHashCodeMain {
 
         //각 클래스마다 hashCode를 이미 오버라이딩 해두었다.
         Integer i = 10;
-        String strA = "A";
-        String strAB = "AB";
+        String strA = "A";    // String strA = new String("A");
+        String strAB = "AB";  // String strAb = new String("AB");
 
         System.out.println("10.hashCode = " + i.hashCode());
         System.out.println("'A'.hashCode = " + strA.hashCode());
