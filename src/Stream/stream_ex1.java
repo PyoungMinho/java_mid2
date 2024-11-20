@@ -1,13 +1,14 @@
 package Stream;
 
 import java.util.*;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class stream_ex1 {
     public static void main(String[] args) {
-        // 람다 Stream 을 공부하기 위한 공간
+    // 람다 Stream 을 공부하기 위한 공간
 
-        // 스트림 만들기
+    // 1. 스트림 만들기
         // 배열
         String[] arr = new String[]{"a", "b", "c", "d", "e", "f"};
         Stream<String> stream1 = Arrays.stream(arr);
@@ -29,6 +30,36 @@ public class stream_ex1 {
         generatedStream.forEach(System.out::print);
 
         Stream<Integer> iteratedStream = Stream.iterate(0, n->n+2).limit(5); //0,2,4,6,8
+
+        // 기본 타입형 스트림
+        IntStream intStream = IntStream.range(1,5); // [1,2,3,4]
+
+        // 병렬 스트림 parallelStream
+        Stream<String> parallelStream = list.parallelStream();
+
+
+    // 2. 중간 연산 스트림 (가공하기)
+
+        // Filtering (if)
+        List<String> strings = Arrays.asList("a","b","c");
+        Stream<String> stream = strings.stream()
+                .filter(str -> list.contains("a")); // 'a'가 들어간 요소만 선택  [a]
+
+        // Mapping
+        Stream<String> stream3 = list.stream()
+                .map(String::toUpperCase);
+        //[A,B,C]
+        //.map(Integers::parseInt);
+        // 문자열 -> 정수로 변환
+
+        // Sorting
+        Stream<String> stream4 = list.stream()
+                .sorted() // [a,b,c] 오름차순 정렬
+                .sorted(Comparator.reverseOrder()); // [c,b,a] (내림차순)
+
+        List<String> list1 = Arrays.asList("a","bb","ccc");
+        Stream<String> stream5 = list.stream()
+                .sorted(Comparator.comparingInt(String::length)); // [ccc,bb,a] //문자열 길이 기준 정렬
 
 
         // 사용해보기
