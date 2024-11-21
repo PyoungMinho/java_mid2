@@ -6,7 +6,7 @@ import test.ex3.unit.Marine;
 public class Shuttle<T extends BioUnit>{
 
     private T unit;
-
+    //제네릭 활용 및 이해
 
     public void in(T t) {
         this.unit = t;
