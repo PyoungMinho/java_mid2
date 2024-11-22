@@ -90,5 +90,76 @@ public class stream_ex1 {
                 .filter(name -> name.length() > 3)
                 .toList();
         System.out.println(myCps);
+
+
+        // 최종 연산 ( 결과 만들기 )
+
+        // Calculating
+        IntStream stream = list.stream()
+                .count()   //스트림 요소 개수 반환
+                .sum()     //스트림 요소의 합 반환
+                .min()     //스트림의 최소값 반환
+                .max()     //스트림의 최대값 반환
+                .average();//스트림의 평균값 반환
+
+        // Reduction
+        IntStream stream = IntStream.range(1,5);
+	                        .reduce(10, (total,num)->total+num);
+        //reduce(초기값, (누적 변수,요소)->수행문)
+        // 10 + 1+2+3+4+5 = 25
+
+        // Collecting
+        //예시 리스트
+        List<Person> members = Arrays.asList(new Person("lee",26),
+                new Person("kim", 23),
+                new Person("park", 23));
+
+        // toList() - 리스트로 반환
+        members.stream()
+                .map(Person::getLastName)
+                .collect(Collectors.toList());
+        // [lee, kim, park]
+
+        // joining() - 작업 결과를 하나의 스트링으로 이어 붙이기
+        members.stream()
+                .map(Person::getLastName)
+                .collect(Collectors.joining(delimiter = "+" , prefix = "<", suffix = ">");
+        // <lee+kim+park>
+
+        //groupingBy() - 그룹지어서 Map으로 반환
+        members.stream()
+                .collect(Collectors.groupingBy(Person::getAge));
+        // {26 = [Person{lastName="lee",age=26}],
+        //  23 = [Person{lastName="kim",age=23},Person{lastName="park",age=23}]}
+
+        //collectingAndThen() - collecting 이후 추가 작업 수행
+        members.stream()
+                .collect(Collectors.collectingAndThen (Collectors.toSet(),
+                        Collections::unmodifiableSet));
+        //Set으로 collect한 후 수정불가한 set으로 변환하는 작업 실행
+
+
+
+        // Matching
+        List<String> members = Arrays.asList("Lee", "Park", "Hwang");
+        boolean matchResult = members.stream()
+                .anyMatch(members->members.contains("w")); //w를 포함하는 요소가 있는지, True
+
+        boolean matchResult = members.stream()
+                .allMatch(members->members.length() >= 4); //모든 요소의 길이가 4 이상인지, False
+
+        boolean matchResult = members.stream()
+                .noneMatch(members->members.endsWith("t")); //t로 끝나는 요소가 하나도 없는지, True
+
+        // Iterating
+        members.stream()
+                .map(Person::getName)
+                .forEach(System.out::println);
+        //결과를 출력 (peek는 중간, forEach는 최종)
+
+        // Finding
+        Person person = members.stream()
+                .findAny()   //먼저 찾은 요소 하나 반환, 병렬 스트림의 경우 첫번째 요소가 보장되지 않음
+                .findFirst() //첫번째 요소 반환
     }
 }
