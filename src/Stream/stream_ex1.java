@@ -163,4 +163,6 @@ public class stream_ex1 {
                 .findAny()   //먼저 찾은 요소 하나 반환, 병렬 스트림의 경우 첫번째 요소가 보장되지 않음
                 .findFirst() //첫번째 요소 반환
     }
+
+    // 스트림과 람다를 devsco에 많이 사용해보자
 }
