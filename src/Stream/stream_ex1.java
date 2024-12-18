@@ -1,3 +1,4 @@
+/*
 package Stream;
 
 import java.util.*;
@@ -166,3 +167,4 @@ public class stream_ex1 {
 
     // 스트림과 람다를 devsco에 많이 사용해보자
 }
+*/
