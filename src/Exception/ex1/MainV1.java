@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class MainV1 {
     public static void main(String[] args) {
-        NetworkServiceV1 serviceV1 = new NetworkServiceV1();
+//        NetworkServiceV1_1 serviceV1 = new NetworkServiceV1_1();
+//        NetworkServiceV1_2 serviceV1 = new NetworkServiceV1_2(); // 오류 있을때 알맞게 오류로그 발생 but disconnect 가 호출이 안되죠
+        NetworkServiceV1_3 serviceV1 = new NetworkServiceV1_3();   // disconnect 를 호출하는 수정
 
         Scanner scanner = new Scanner(System.in);
         while (true) {

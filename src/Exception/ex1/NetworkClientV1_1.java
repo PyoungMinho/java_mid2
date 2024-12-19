@@ -1,13 +1,13 @@
 package Exception.ex1;
 
-public class NetworkClientV1 {
+public class NetworkClientV1_1 {
 
     private final String address;
     public boolean connetError;
     public boolean sendError;
 
 
-    public NetworkClientV1(String address) {
+    public NetworkClientV1_1(String address) {
         this.address = address;
     }
 
