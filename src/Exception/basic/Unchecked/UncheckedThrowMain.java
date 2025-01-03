@@ -3,9 +3,9 @@ package Exception.basic.Unchecked;
 public class UncheckedThrowMain {
 
     public static void main(String[] args) {
-        Service service = new Service();
-        service.callThrow();
-        System.out.println("정상 종료");
+//        Service service = new Service();
+//        service.callThrow();
+//        System.out.println("정상 종료");
 
         // 언체크 예외의 장단점
 
@@ -21,5 +21,10 @@ public class UncheckedThrowMain {
 
         System.out.println("4+5 : = " + 4 + 5);
         System.out.println("4+5 : = " + (4 + 5));
+
+        int x=5, y=0, z=0;
+        y=x++;
+        z=--x;
+        System.out.println("x y z : " + x + y + z);
     }
 }
