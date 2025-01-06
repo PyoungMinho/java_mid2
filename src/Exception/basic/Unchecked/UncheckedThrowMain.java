@@ -19,12 +19,12 @@ public class UncheckedThrowMain {
         * 실무 트렌드는 체크예외는 거의 잡지 않는다. 예외 처리를 잘 해야 탄탄한 프로그래밍이 가능하다.
         */
 
-        System.out.println("4+5 : = " + 4 + 5);
+    /*    System.out.println("4+5 : = " + 4 + 5);
         System.out.println("4+5 : = " + (4 + 5));
 
         int x=5, y=0, z=0;
         y=x++;
         z=--x;
-        System.out.println("x y z : " + x + y + z);
+        System.out.println("x y z : " + x + y + z);*/
     }
 }
