@@ -7,8 +7,9 @@ public class MainInheritance {
         son.punch();
         System.out.println(Mom.ages);
 
-        new Ex();
-        new Ex();
+        // 객체 생성 없이 정적 메서드 호출
+        Ex.incrementCnt();
+        Ex.incrementCnt();
 
         System.out.println(Ex.cnt);
 
