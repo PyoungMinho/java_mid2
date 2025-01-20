@@ -36,6 +36,18 @@ public class MainInheritance {
 
         // static 변수는 클래스 전체에서 공유되는 값이므로 클래스 이름을 통해 접근하고, 인스턴스 변수는 각 객체에 속하는 값이므로 객체를 통해 접근하는 방식이 맞음.
 
+        int m = 4620;
+
+        int a = m /1000;
+        int b = m % 1000 /500;
+        int c = m % 500 / 100;
+        int d = m /1000;
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+
     }
 
 
