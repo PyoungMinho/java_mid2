@@ -55,6 +55,9 @@ public class MainInheritance {
         System.out.println("배열 최대값2: " + maxVal2(myArr)); // 결과 출력
 
 
+        int solution = solution(10);
+        System.out.println("answer : "+ solution);
+
     }
     public static int maxVal(int[] arr, int size) {
         if (size == 1) {
@@ -72,5 +75,28 @@ public class MainInheritance {
         }
         return max;
     }
+
+
+    public static int solution(int n) {
+        int answer = 0;
+
+        for(int i = 2; i <= n; i++){
+            boolean chk = true;
+            for(int j = 2; j*j <= i; j++){
+                if(i % j == 0){
+                    chk = false;
+                    break;
+                }
+            }
+            if(chk){
+                answer++;
+            }
+        }
+
+        return answer;
+
+    }
+
+
 
 }
