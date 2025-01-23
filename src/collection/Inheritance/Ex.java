@@ -3,6 +3,13 @@ package collection.Inheritance;
 public class Ex {
     public static int cnt =0;
 
+
+    public Ex(int i){
+
+    }
+
+
+
     public static void incrementCnt(){
         cnt++;
     }

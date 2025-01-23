@@ -13,7 +13,6 @@ public class MainInheritance {
 
         System.out.println(Ex.cnt);
 
-
         // how many Kia car
         new Kia();
         new Kia();
