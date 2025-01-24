@@ -125,6 +125,6 @@ public class MainInheritance {
             return answer;
         }
 
-
+        Book bc = new Cartoon();
 
 }
