@@ -125,6 +125,7 @@ public class MainInheritance {
             return answer;
         }
 
-        Book bc = new Cartoon();
+        Book bookStore = new Cartoon();
+//        bookStore.print();
 
 }
