@@ -3,6 +3,16 @@ package collection.Inheritance;
 public class MainInheritance {
     public static void main(String[] args) {
 
+
+        ForStatic staticClass1 = new ForStatic(); // 부모의 static 메서드는 오버라이딩 되지않는다.
+        staticClass1.staticMethod(); // Static Method
+
+        StaticClass staticClass2 = new ForStatic();
+        staticClass2.staticMethod(); // Inside StaticClass
+
+        // 업캐스팅 Parent p = new Child() 일때 부모의 private메서드 상속 불가 오류 처리
+        // Child c = new Child() 는 부모의 메서드라도 재정의한 자식 것으로 실행된다.
+
         Son son = new Son();
         son.punch();
         System.out.println(Mom.ages);
@@ -127,5 +137,6 @@ public class MainInheritance {
 
         Book bookStore = new Cartoon();
 //        bookStore.print();
+
 
 }
