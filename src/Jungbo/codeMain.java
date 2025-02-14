@@ -46,5 +46,85 @@ public class codeMain {
         // Java에서 부모와 자식 관계에 대한 질문을 많이한다.
         // C언어는 포인터로 헷갈리게 하는편
         // Python {} dic아니면 Set
+
+        // 2023 년 2회
+
+//        #include <stdio.h>
+//
+//        int main() {
+//
+//            int n[5] = {5,4,3,2,1};
+//            int i;
+//
+//            for(i=0;i<5; i++){
+//                printf("%d",n[(i+1)%5] ); //  4 3 2 1 5 로 출력하는 방법
+//            }
+//            return 0;
+//        }
+
+        int m = 4620 ;
+        int q =  m / 1000;
+        int w =  m % 1000/500;
+        int e =  m % 500/100;
+        int r =  m % 100/10 ;
+
+        System.out.println(q); // 천원
+        System.out.println(w); // 오백원
+        System.out.println(e); // 백원
+        System.out.println(r); // 십원
+
+
+//        #include <stdio.h>
+//        #include <stdlib.h>
+//
+//        char n[30];
+//        char*name(){
+//            printf(입력 : );
+//            gets(n);
+//            return n;
+//        }
+//
+//        int main() {
+//
+//            char*test1;
+//            char*test2;
+//            char*test3;
+//
+//            test1 =name();
+//            test2 =name();
+//            test3 =name();
+//
+//            printf("%s\n",test1);
+//            printf("%s\n",test2);
+//            printf("%s",test3);     배열을 공유하기 때문에 마지막에 들어온 값이 세번 나오는 케이스
+//
+//            return 0;
+//        }
+
+//        #include <stdio.h>
+//
+//        int main() {
+//            int n[3] = {73,95,82};
+//            int sum = 0 ;
+//
+//            for(int i=0; i<3; i++){
+//                sum +=n[i];
+//            }
+//
+//            switch (sum/30) {
+//                case 10:
+//                case 9:
+//                    printf("A");
+//                case 8:
+//                    printf("B");
+//                case 7:
+//                case 6:
+//                    printf("C");
+//                default:
+//                    printf("D");  // break가 없어서 쭉 흐른다. default도 출력됨  BCD
+//            }
+//            return 0;
+//        }
+
     }
 }
