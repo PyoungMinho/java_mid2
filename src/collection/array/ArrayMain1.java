@@ -32,6 +32,15 @@ public class ArrayMain1 {
                 break;
             }
         }
+
+
+        try{
+            System.out.println("try -> ");
+        }catch (Exception e){
+
+        }finally {
+            System.out.println("finally !!");
+        }
     }
     // 배열의 시작 참조 + (자료의 크기 * 인덱스 위치)
     //배열의 경우 인덱스를 사용하면 한번의 계산으로 매우 효율적으로 자료의 위치를 찾을 수 있다. 인덱스를 통한 입력, 변경,

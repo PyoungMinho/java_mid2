@@ -19,5 +19,9 @@ public class ImmutableMain {
     //가변 -> 불변리스트로
     List<Integer> unmodifiableList = Collections.unmodifiableList(mutableList);
     System.out.println(" unmodifiableList: " + unmodifiableList.getClass());
+
+
+
+
   }
 }

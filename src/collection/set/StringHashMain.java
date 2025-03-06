@@ -32,5 +32,5 @@ public class StringHashMain {
     static int hashIndex(int value) {
         return value % CAPACITY;
     }
-
+ //Hash는
 }
