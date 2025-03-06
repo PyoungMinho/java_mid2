@@ -19,7 +19,7 @@ public class testmain {
 
     String result = comp(str, idx-1, seen);
 
-    if(!seen[c]){
+    if(!seen[c]){      // char를 아스키코드로 사용한다 같은 문자가 들어오면 더하지 않겠다는 식
       seen[c] = true;
       result = c +result;
     }
