@@ -9,4 +9,8 @@ public class Calculator {
   public int subs(int a, int b) {
     return a-b;
   }
+
+  public int gob(int a, int b) {
+    return a*b;
+  }
 }

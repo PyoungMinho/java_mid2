@@ -29,4 +29,14 @@ public class calculatorTest {
 
   }
 
+  @Test
+  void 곱셈_기능_테스트(){
+    Calculator calculator = new Calculator();
+
+    int dou = calculator.gob(3,6);
+
+    assertEquals(18,dou);
+
+  }
+
 }
