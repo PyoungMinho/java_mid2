@@ -9,7 +9,21 @@ public class testmain {
     String result = comp(str,length-1,seen);
 
     System.out.println(result);
+
   }
+  static String[] s = new String[3];
+
+  static void func(String[] s, int size){
+    for(int i =1; i<size; i++){
+      if(s[i-1].equals(s[i])){
+        System.out.print("O");
+      }else System.out.print("N");
+    }
+    for (String m : s) {
+      System.out.println(m);
+    }
+  }
+
 
 
   public static String comp(String str, int idx, boolean[] seen){
