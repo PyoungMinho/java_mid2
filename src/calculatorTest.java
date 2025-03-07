@@ -22,7 +22,7 @@ public class calculatorTest {
     Calculator calculator = new Calculator();
 
     // when
-    int subs = calculator.subs(5, 3);
+    int subs = calculator.subs(5,3);
 
     // then
     assertEquals(2,subs);
@@ -33,9 +33,9 @@ public class calculatorTest {
   void 곱셈_기능_테스트(){
     Calculator calculator = new Calculator();
 
-    int dou = calculator.gob(3,6);
+    int mul = calculator.multiply(3,6);
 
-    assertEquals(18,dou);
+    assertEquals(18,mul);
 
   }
 
